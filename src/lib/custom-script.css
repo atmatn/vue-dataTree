@@ -1,0 +1,293 @@
+#chartjs-tooltip {
+    opacity: 0;
+    position: absolute;
+    background: white;
+    color: black;
+    padding: 3px;
+    border-radius: 3px;
+    -webkit-transition: all .1s ease;
+    transition: all .1s ease;
+    pointer-events: none;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+.chartjs-tooltip-key{
+       display:inline-block;
+       width:10px;
+       height:10px;
+}
+
+#script-panel{
+    width: 40%;
+    display: inline-block;
+}
+
+#disp{
+    width: 55%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#argsEg{
+width: 55%;
+display: inline-block;
+vertical-align: top;
+}
+
+#script-body {
+    width: 90%;
+    /*height: 20em;*/
+}
+
+.no-data-tr{
+    display: none;
+}
+.no-data .no-data-tr{
+    display: table-row
+}
+
+.myScriptLink, .publishedScriptLink{
+    cursor: pointer;
+}
+
+.deactivated{
+    color: gray;
+}
+
+.myaction, .editScript, .runScript, .deleteScript, .publishScript, .unpublishScript, .openPublishedScript, .runPublishedScript {
+    cursor: pointer;
+}
+
+.unpublishScript, .publishScript{
+width: 4em;
+display: inline-block;
+text-align: center;
+}
+
+#editor{
+    border-style: solid;
+    border-width: 1px;
+}
+
+#script-body{
+height: 20em;
+width: 100%;
+}
+
+.CodeMirror {
+/*height: auto;*/
+}
+
+.error{
+    color: red;
+}
+
+
+.show-legend li{
+list-style: none;
+float: left;
+margin-right: 20px;
+}
+
+.echarts{
+width: 100%;
+max-width: 800px;
+height: 400px;
+margin-top: 50px;
+}
+
+.old-echarts{
+width: 800px;
+height: 400px;
+margin-top: 50px;
+}
+
+.custom-table-div{
+text-align: center;
+}
+
+.custom-table{
+/*width: 90%;*/
+margin: auto auto auto auto;
+}
+
+.section-leading .custom-table{
+margin: auto auto auto 0;
+}
+
+/*body {
+font-family: Helvetica Neue, Arial, sans-serif;
+font-size: 14px;
+}*/
+
+.custom-script-table{
+width: 700px;
+display: inline-block;
+}
+.custom-script-table table {
+/* border: 2px solid #42b983;*/
+border-radius: 3px;
+/*  background-color: #fff;*/
+margin-top: 50px;
+margin-left: 80px;
+}
+
+.custom-script-table th {
+/*  background-color: #42b983;*/
+/*  color: rgba(255,255,255,0.66);*/
+/*  cursor: pointer;
+-webkit-user-select: none;
+-moz-user-select: none;
+-user-select: none;*/
+}
+
+.custom-script-table td {
+/*  background-color: #f9f9f9;*/
+}
+
+.custom-script-table th, td {
+
+}
+
+.custom-script-table th.active {
+/*  color: #fff;*/
+}
+
+.custom-script-table th.active .arrow {
+opacity: 1;
+}
+
+.arrow {
+display: inline-block;
+vertical-align: middle;
+width: 0;
+height: 0;
+margin-left: 5px;
+opacity: 0.66;
+}
+
+.arrow.asc {
+border-left: 4px solid transparent;
+border-right: 4px solid transparent;
+border-bottom: 4px solid #000;
+}
+
+.arrow.dsc {
+border-left: 4px solid transparent;
+border-right: 4px solid transparent;
+border-top: 4px solid #fff;
+}
+
+#run-progress{
+background: lightyellow;
+}
+
+.fixed-topright{
+position: fixed;
+top: 0;
+right: 0;
+z-index: 10000;
+}
+
+#myScriptTable td, #publishedScriptTable td {
+word-wrap:break-word;
+width:100px;
+word-break:break-all;
+}
+
+.myTag, .modTime {
+font-size: 0.5em;
+}
+
+.link-edit-history {
+margin-left: 4em;
+float: right;
+margin-right: 4em;
+}
+
+.qlink{
+float: right;
+}
+
+.btnGetRecent{
+cursor: pointer;
+}
+
+.custom-table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    background-color: transparent;
+    width: 100%;
+    max-width: 100%;
+    /*margin-bottom: 20px;*/
+  }
+  .custom-table th {
+    text-align: left;
+  }
+  .custom-table td {
+    text-align: left;
+  }
+  .custom-table {
+    width: 100%;
+    max-width: 100%;
+    /*margin-bottom: 20px;*/
+  }
+  .custom-table > thead > tr > th,
+  .custom-table > tbody > tr > th,
+  .custom-table > tfoot > tr > th,
+  .custom-table > thead > tr > td,
+  .custom-table > tbody > tr > td,
+  .custom-table > tfoot > tr > td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #dddddd;
+  }
+  .custom-table > thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dddddd;
+  }
+  .custom-table > caption + thead > tr:first-child > th,
+  .custom-table > colgroup + thead > tr:first-child > th,
+  .custom-table > thead:first-child > tr:first-child > th,
+  .custom-table > caption + thead > tr:first-child > td,
+  .custom-table > colgroup + thead > tr:first-child > td,
+  .custom-table > thead:first-child > tr:first-child > td {
+    border-top: 0;
+  }
+  .custom-table > tbody + tbody {
+    border-top: 2px solid #dddddd;
+  }
+  .custom-table .custom-table {
+    background-color: #ffffff;
+  }
+  .custom-table {
+    border: 1px solid #dddddd;
+  }
+  .custom-table > thead > tr > th,
+  .custom-table > tbody > tr > th,
+  .custom-table > tfoot > tr > th,
+  .custom-table > thead > tr > td,
+  .custom-table > tbody > tr > td,
+  .custom-table > tfoot > tr > td {
+    border: 1px solid #dddddd;
+  }
+  .custom-table > thead > tr > th,
+  .custom-table > thead > tr > td {
+    border-bottom-width: 2px;
+  }
+  .custom-table > tbody > tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+  }
+  
+  .custom-table-div {
+    margin-bottom: 20px;
+  }
+  
+  .download-button {
+  
+  }
